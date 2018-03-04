@@ -15,6 +15,8 @@ body {
 .secondary-text-color  { color: #757575; }
 .divider-color         { border-color: #BDBDBD; }
 
+.text-primary-highlight { color: #2196f3; }
+
 
 .banner.container {
   display: flex;
@@ -54,6 +56,15 @@ h5.subheader {
   margin: 5px 0px;
   font-size: 1.00rem;
   letter-spacing: 0.025rem;
+}
+
+h4.header-content {
+  margin: 5px 0px;
+  font-weight: 700;
+  letter-spacing: 0.025rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 div.subheader.container {
@@ -151,4 +162,45 @@ img.logo {
   display: flex;
   justify-content: flex-start;
   text-align: left;
+}
+
+.objective.content {
+  font-weight: 700;
+}
+
+.about.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container.about--left {
+  flex-basis: 66%;
+  padding: 5px 10px;
+}
+
+.container.about--right {
+  flex-basis: 33%;
+  padding: 5px 10px;
+}
+
+a.context-link { 
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tips-list {
+  list-style-type: none;
+  margin: 0px;
+  padding-left: 0px;
+}
+
+.tip {
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+}
+
+.task-list {
+  list-style-type: numeric;
 }

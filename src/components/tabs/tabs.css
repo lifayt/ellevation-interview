@@ -1,0 +1,27 @@
+.tabs {
+  margin: 10px;
+}
+
+.tab-list {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.tab {
+  padding: 5px 10px;
+  background-color: #2196F3;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+.tab-label {
+  margin: 0px; 
+  padding: 10px; 
+  font-weight: 300;
+}
+
+.tab--active {
+  background-color: #1976D2;
+}
