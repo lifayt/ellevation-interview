@@ -6,6 +6,8 @@ import volume from '../../assets/ic_volume_up_white_24px.svg';
 import download from "../../assets/ic_file_download_black_24px.svg";
 import lightbulb from '../../assets/ic_lightbulb_outline_black_24px.svg';
 import folder from '../../assets/ic_folder_black_24px.svg';
+import checkmark from '../../assets/ic_check_circle_black_24px.svg';
+import warning from '../../assets/ic_warning_black_24px.svg';
 
 function MainContent(props) {
   const aboutPanel = (
@@ -96,28 +98,147 @@ function MainContent(props) {
           </li>
           <li className="task">
             In partners, groups, or as a whole class, students share their initial observations.
+            <a className="context-link text-primary-highlight">
+              <img
+                  alt="think sheet download link"
+                  className="logo"
+                  src={download}
+                />
+              <div className="container button--text">
+                <span className="category">Download:</span>
+                Hanging Hashtag Think Sheet
+              </div>
+            </a>
+            <div className="context-text text-secondary-highlight">
+              <img
+                  alt="think sheet download link"
+                  className="logo"
+                  src={warning}
+                />
+              <div className="container button--text">
+                <span className="category">WATCH OUT FOR:</span>
+                Pair students as appropriate as they decide upon a hashtag for the image.
+              </div>
+            </div>
+            <div className="context-text text-tertiary-highlight">
+              <img
+                  alt="think sheet download link"
+                  className="logo"
+                  src={checkmark}
+                />
+              <div className="container button--text">
+                <span className="category">Success: </span>
+                Students actively studying the image and taking the time to share their ideas.
+              </div>
+            </div>
           </li>
           <li className="task">
             Emphasize that there is no one correct answer and question students about the deeper meaning behind their initial observations.
           </li>
           <li className="task">
-          Students write that keyword or phrase on a n index card with a hashtag (#) before it, the same way they might do so on social media.
+            Students write that keyword or phrase on a n index card with a hashtag (#) before it, the same way they might do so on social media.
+            <div className="context-text text-tertiary-highlight">
+              <img
+                  alt="think sheet download link"
+                  className="logo"
+                  src={checkmark}
+                />
+              <div className="container button--text">
+                <span className="category">Success: </span>
+                Students explaining why they chose a specific word or phrase.
+              </div>
+            </div>
           </li>
           <li className="task">
             Students write that keyword or phrase on a n index card with a hashtag (#) before it, the same way they might do so on social media.
+            <div className="context-text text-secondary-highlight">
+              <img
+                  alt="think sheet download link"
+                  className="logo"
+                  src={warning}
+                />
+              <div className="container button--text">
+                <span className="category">WATCH OUT FOR:</span>
+                Encourage the use of new vocabulary by making sure students understand every word used in this activity. Provide dictionary resources if necessary.
+              </div>
+            </div>
           </li>
           <li className="task">
+            As students finish, invite them to post their cards around the image, creating a frame.
           </li>
           <li className="task">
+            When the frame is finished and students have had a chance to examine it, gather students together a s a whole class to reflect on the hashtags.
+            <div className="context-text text-tertiary-highlight">
+              <img
+                  alt="think sheet download link"
+                  className="logo"
+                  src={checkmark}
+                />
+              <div className="container button--text">
+                <span className="category">Success: </span>
+                Students noticing similarities, differences, surprises, context, or anything else that they noticed about the words they assigned to the image.
+              </div>
+            </div>
           </li>
         </ul>
       </div>
     </div>
   );
 
+  const examplesPanel = (
+    <div className="examples container">
+      <div className="filter buttons">
+        <button type="button" className="button button-dropdown">
+          Grades: 3-5 ▼
+        </button>
+        <button type="button" className="button button-dropdown">
+          Subject: Math ▼
+        </button>
+      </div>
+      <h2 className="header">
+        3-5 Math
+      </h2>
+      <div className="example-objectives container dark-primary-color text-primary-color">
+        <div className="content-objective">
+          <h4 className="header-content"> 
+            Content Objectives
+          </h4> 
+          <div className="text">
+            Students will recognize volume as an attribute of solid figures. 
+          </div>
+        </div>
+        <div className="language-objective">
+          <h4 className="header-content"> 
+            Language Objectives
+          </h4> 
+          <div className="text">
+            Students will work to describe objects using prepositions.
+          </div>
+        </div>
+      </div>
+      <div className="examples text">
+        <p>
+        Teacher will place a variety of images from magazines that show a volume in a vari ety of ways: drink containers, swimming pools. beakers, and boxes/cubes. 
+        </p>
+        <p>
+        Teacher will explain to the students that they will be adding descriptive words in the form of hashtags for how much and what is being displayed in each image. 
+        </p>
+        <p>
+        Working in small groups, students will rotate from image to image, discussing what they see and work to add hashtags describing how much is there.
+        </p>
+        <p>
+        Gathering students and images together, the teacher will guide a discussion on the basics of volume, building on the students contributions to the images and dispelling misconceptions. 
+        </p>
+        <p>
+        The teacher will continue with the lesson on recognizing volume as an attribute of solid figures.
+        </p>
+      </div>
+    </div>
+  );
+
   return (
     <div className="main-content container">
-      <div className="container column-left">
+      <div className="container main-content-left">
         <Tabs>
           <TabList>
             <Tab>About</Tab>
@@ -127,14 +248,13 @@ function MainContent(props) {
           <TabPanels>
             <TabPanel>{aboutPanel}</TabPanel>
             <TabPanel>{activityPlanPanel}</TabPanel>
-            <TabPanel>Examples</TabPanel>
+            <TabPanel>{examplesPanel}</TabPanel>
           </TabPanels>
         </Tabs>
         <div className="container comments">
         </div>
       </div>
-      <div className="container column-right">
-
+      <div className="container main-content-right">
       </div>
     </div>
   );

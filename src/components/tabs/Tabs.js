@@ -8,7 +8,7 @@ import './tabs.css';
 
 class Tabs extends Component {
   state = {
-    tabIndex: 1
+    tabIndex: 2
   }
 
   selectTabIndex = (tabIndex) => {

@@ -16,7 +16,8 @@ body {
 .divider-color         { border-color: #BDBDBD; }
 
 .text-primary-highlight { color: #2196f3; }
-
+.text-secondary-highlight { color: #f7cd13; }
+.text-tertiary-highlight { color: #66f513; }
 
 .banner.container {
   display: flex;
@@ -189,6 +190,11 @@ a.context-link {
   cursor: pointer;
 }
 
+div.context-text {
+  display: flex;
+  align-items: center;
+}
+
 .tips-list {
   list-style-type: none;
   margin: 0px;
@@ -202,5 +208,68 @@ a.context-link {
 }
 
 .task-list {
-  list-style-type: numeric;
+  list-style-type: decimal;
+  margin: 0px;
+  padding-left: 25px;
+}
+
+.task {
+  margin: 5px 0px 0px 0px;
+}
+
+.activity-plan.container {
+  margin: 5px 10px;
+}
+
+.examples.container {
+  margin: 5px 10px;
+}
+
+.main-content-right {
+  flex-basis: 33%;
+}
+
+.main-content-left {
+  flex-basis: 66%;
+}
+
+.main-content {
+  display: flex;
+}
+
+.buttons.filter {
+  display: flex;
+  justify-content: flex-start;
+  margin: 5px 0px;
+}
+
+.button-dropdown {
+  text-transform: none;
+  box-shadow: none;
+  padding: 5px;
+}
+
+.button-dropdown:hover {
+  background-color: #BBDEFB;
+  box-shadow: none;
+}
+
+.example-objectives {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -5px;
+  margin-right: -5px;
+  padding: 10px 5px 20px 10px;
+}
+
+.content-objective {
+  flex-basis: 50%; 
+}
+
+.language-objective {
+  flex-basis: 50%;
+}
+
+.examples.text {
+  padding: 5px 0px
 }
