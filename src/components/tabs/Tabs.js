@@ -1,8 +1,3 @@
-/*
-  Structure & technique learned from Ryan Florence's 'Total React' Highly recommended for 
-  advanced react techniques and instruction --- totalreact.com
-*/
-
 import React, { Component } from 'react';
 import './tabs.css';
 

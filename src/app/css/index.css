@@ -107,7 +107,6 @@ img.logo {
   border: none;
   cursor: pointer;
   border-radius: 5px;
-  text-transform: uppercase;
   border-radius: 2px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
@@ -126,7 +125,6 @@ img.logo {
 }
 
 .button--link {
-  text-transform: none;
   padding: 5px;
 }
 
@@ -227,6 +225,7 @@ div.context-text {
 
 .main-content-right {
   flex-basis: 33%;
+  padding: 10px 10px 5px 10px;
 }
 
 .main-content-left {
@@ -244,7 +243,6 @@ div.context-text {
 }
 
 .button-dropdown {
-  text-transform: none;
   box-shadow: none;
   padding: 5px;
 }
@@ -272,4 +270,36 @@ div.context-text {
 
 .examples.text {
   padding: 5px 0px
+}
+
+.buttons.support {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.support-level {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.support-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.de-emphasize {
+  font-weight: 400;
+  margin-left: 5px;
+}
+
+.text-link {
+  text-decoration: underline;
+  color: #2196F3;
+}
+
+.bullet-list {
+  padding: 20px 5px 20px 30px;
 }
