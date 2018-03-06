@@ -9,7 +9,6 @@ import {
 import chat from "../../assets/ic_chat_bubble_outline_white_24px.svg";
 import search from "../../assets/ic_search_black_24px.svg";
 import thumbsUp from "../../assets/ic_thumb_up_black_24px.svg";
-import desert from "../../assets/desert.jpeg";
 
 function Comments(props) {
   const chatBox = (
