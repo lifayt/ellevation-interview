@@ -59,7 +59,7 @@ function Comments(props) {
       <div className="comments-header">
         <h2 className="header">Comments</h2>
         <button
-          className="button comment dark-primary-color text-primary-color"
+          className="button add-comment dark-primary-color text-primary-color"
           type="button"
         >
           <img alt="speech bubble" src={chat} />
