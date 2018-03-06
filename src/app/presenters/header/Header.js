@@ -1,6 +1,6 @@
 import React from "react";
 import Headings from "./Headings";
-import DownloadResources from './DownloadResources';
+import DownloadResources from "./DownloadResources";
 
 function Header(props) {
   return (
